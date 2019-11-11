@@ -1,5 +1,12 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+body{
+  background-image: url("../Images/Lgon.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 a.navbar-brand {
   white-space: normal;
@@ -69,3 +76,128 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
+/* --- ---Login --- --- */
+
+.bodylogin {
+  background: url('../../images/Fondolog.jpg') no-repeat center center fixed;
+  background-size: cover;
+  /*opacity: 0.70;
+filter: alpha(opacity=70);*/
+}
+
+
+
+
+.user-img {
+  /* --- distancia--- */
+  margin-top: -50px;
+  margin-bottom: 35px;
+}
+
+  .user-img img {
+      /* --- tamaño de imagen--- */
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      box-shadow: 0px 0px 3px #848484;
+  }
+
+
+.main-section {
+  /* --- distancia y tamaño,cuerpo formulario--- */
+  margin: 0 auto;
+  margin-top: 25%;
+  padding: 0;
+}
+
+.modal-content {
+  /* --- cuerpo formulario--- */
+  background-color: #3b4652;
+  opacity: .95;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+}
+
+
+.form-input input {
+  /* ---Cajas de texto--- */
+  height: 42px;
+  font-size: 18px;
+  border: 0;
+  padding-left: 54px;
+  border-radius: 5px;
+}
+
+.form-input::before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: 28px;
+  font-size: 20px;
+  padding-top: 4px;
+}
+
+/*.form-input#usuario::before {
+  content: "\e801";
+}
+.form-input#password-user::before {
+  content: "\f13e";
+}*/
+/* ---btn ingreso--- */
+.btnIngresar {
+  width: 60%;
+  margin: 3px 0 25px;
+  border-radius: 5px;
+  background-color: #FFC163;
+  border-color: #FFC163;
+}
+
+  .btnIngresar:hover {
+      background-color: #FFC163;
+      border-color: #FFC163;
+  }
+
+  .btnIngresar:focus {
+      background-color: #FFC163;
+      border-color: #FFC163;
+  }
+
+  .btnIngresar:active {
+      background-color: #FFC163;
+      border-color: #FFC163;
+      box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(114, 96, 153, 0.6);
+      outline: 0 none;
+  }
+
+/* ---Link Restablecer pass--- */
+.forgot {
+  padding: 8px 0;
+}
+
+  .forgot a {
+      color: #fff;
+  }
+
+
+/*-----------PIE DE PAGINA-------------*/
+.pie {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+.pie > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*-----------PIE DE PAGINA-------------*/
+/*----Formulario olvido Password-----*/
+.bodyOlvido {
+  padding-top: 10%;
+}
+/*----Formulario olvido Password-----*/
