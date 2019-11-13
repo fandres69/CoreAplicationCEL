@@ -67,7 +67,11 @@ namespace CEL.DLL
     private string Base{get;set;}
 
     /// <summary>
-    /// Variable con la cadena de conexcion ensamblada
+    /// Variable con la cadena de conexión ensamblada.
+    /// Sqls:String.Format("Server ={0}; Database = {1}; User Id = {2}; Password = {3}; MultipleActiveResultSets = true", sourse_bd, base_db, usario_db, pass_db);
+    /// Psql:String.Format("Server=localhost;Port=5432; User Id=postgres;Password=1234;Database = systemBD")
+    /// Mysql:
+    /// Oracle:
     /// </summary>
     /// <value></value>
     public string Cadena_con{get;set;}

@@ -25,14 +25,14 @@ namespace CEL.Models.TbModels
         {
             entity.HasKey(e =>e.IdUsuarios);
             entity.ToTable("Usuario", "dbo");
-            entity.Property(e=>e.Usuario);   
-            entity.Property(e=>e.Password);   
+            entity.Property(e=>e.Usuario).HasMaxLength(80);   
+            entity.Property(e=>e.Password).HasMaxLength(80);   
             entity.Property(e=>e.Logueado);   
             entity.Property(e=>e.Activo);   
             entity.Property(e=>e.Tipo_usuario);   
             entity.Property(e=>e.Bloqueo);   
             entity.Property(e=>e.Cambio_pass);   
-            entity.Property(e=>e.Expiracion);   
+            entity.Property(e=>e.Expiracion).HasColumType(DateTime);   
             entity.Property(e=>e.IdUsuarios);   
         }
     }	
